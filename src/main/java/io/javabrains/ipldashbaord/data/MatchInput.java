@@ -1,6 +1,11 @@
 package io.javabrains.ipldashbaord.data;
 
+/**
+ * @author Nazrul
+ * @version 0.1
+ * */
 public class MatchInput {
+
     private String id;
     private String city;
     private String date;
@@ -18,6 +23,7 @@ public class MatchInput {
     private String method;
     private String umpire1;
     private String umpire2;
+
     public String getId() {
         return id;
     }
