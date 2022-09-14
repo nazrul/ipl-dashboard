@@ -4,23 +4,26 @@ import { MatchSmallCard } from '../components/MatchSmallCard';
 
 export const TeamPage = () => {
 
-  const [team, setTeam] = useState();   
+  const initialValue = 1;
+  const [team, setTeam] = useState(initialValue);   
 
   useEffect(
     () => {
         const fetchMatches = async () => {
-            const response = await fetch('http://localhost:8080/team/Delhi%20Capitals');
+            const response = await fetch('http://localhost:8080/team/Deccan Chargers');
             const data = await response.json();
-            // setTeam(data);
-            console.log(data);
+            setTeam(data);
+            // console.log(data);
         };
+        
         fetchMatches();
     }
 
-  );  
+  );
+
   return (
     <div className="TeamPage">
-      <h1>team.teamName</h1>    
+      <h1>{team.teamName}</h1>    
       <MatchDetailCard/>
       <MatchSmallCard/>
       <MatchSmallCard/>
