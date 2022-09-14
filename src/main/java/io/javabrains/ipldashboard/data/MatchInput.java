@@ -1,4 +1,4 @@
-package io.javabrains.ipldashbaord.data;
+package io.javabrains.ipldashboard.data;
 
 /**
  * @author Nazrul

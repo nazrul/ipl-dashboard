@@ -1,4 +1,4 @@
-package io.javabrains.ipldashbaord.data;
+package io.javabrains.ipldashboard.data;
 
 import java.util.HashMap;
 import java.util.List;
@@ -16,7 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
-import io.javabrains.ipldashbaord.model.Team;
+import io.javabrains.ipldashboard.model.Team;
 
 @Component
 public class JobCompletionNotificationListener extends JobExecutionListenerSupport {
